@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css">
+  <link rel="stylesheet" href="dist/css/bootstrap-navbar-dropdowns.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.js" defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+
+
+  <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <div class="navbar navbar-expand-md navbar-dark bg-dark mb-4" role="navigation">
+    <a class="navbar-brand" href="#">Virtual Practice Lab</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/index">Quiz
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+      </ul>
+      <form class="form-inline mt-2 mt-md-0 leave">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown2">
+              <li class="dropdown-item"><a href="/login" style="color:black">Login</a></li>
+              <li class="dropdown-item"><a href="/register" style="color:black">Signup</a></li>
+              <li class="dropdown-item"><a href="/login" style="color:black">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="https://13.235.70.253:9090/cockpit+app/@localhost/system/terminal.html">container</a>
+    <a href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">ubuntu</a>
+  </div>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+  <div class="questions-allign">
+
+    <div>
+      <div>
+        <div><span class="text-sizing"><b>1. pwd command</b></span>
+          <p>Use the <b>pwd</b> command to find out the path of the current working directory (folder) you’re in. The command will return an absolute (full) path, which is basically a path of all the directories that starts with a forward slash
+            <b>(/)</b>. An example of an absolute path is <b>/home/username</b>.</p>
+          <p class="link-refer-size">
+            Try here :-
+          </p>
+          <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+        </div>
+      </div>
+      <br />
+      <div>
+        <div>
+          <div><span class="text-sizing"><b>2. cd command</b></span>
+            <p>To navigate through the Linux files and directories, use the <b>cd </b>command. It requires either the full path or the name of the directory, depending on the current working directory that you’re in.</p>
+            <p>
+              Let’s say you’re in <b>/home/username/Documents </b>and you want to go to <b>Photos </b>, a subdirectory of <b>Documents </b>. To do so, simply type the following command: <b>cd Photos </b>.
+            </p>
+            <p>
+              Another scenario is if you want to switch to a completely new directory, for example,<b>/home/username/Movies </b>. In this case, you have to type cd followed by the directory’s absolute path: <b>cd /home/username/Movies</b>.
+            </p>
+            <p>
+              There are some shortcuts to help you navigate quickly:
+            </p>
+            <ul>
+              <li>
+                <b>cd.. </b>
+                ("to move one directory up")
+              </li>
+              <li>
+                <b>cd </b>
+                ("to go straight to home folder")
+              </li>
+              <li>
+                <b>cd- </b>
+                ("to move to your previous directory")
+              </li>
+            </ul>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>3. ls command</b></span>
+            <p>The <b>ls </b>command is used to view the contents of a directory. By default, this command will display the contents of your current working directory.</p>
+            <p>
+              If you want to see the content of other directories, type ls and then the directory’s path. For example, enter <b>ls /home/username/Documents </b>to view the content of <b>Documents </b>.
+            </p>
+            <p>
+              There are variations you can use with the <b>ls </b>command:
+            </p>
+            <ul>
+              <li>
+                <b>ls -R </b>
+                ("will list all the files in the sub-directories as well")
+              </li>
+              <li>
+                <b>ls -a </b>
+                ("will show the hidden files")
+              </li>
+              <li>
+                <b>ls -al </b>
+                ("will list the files and directories with detailed information like the permissions, size, owner, etc.")
+              </li>
+            </ul>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>4. cat command</b></span>
+            <p>
+              <b>cat </b>(short for concatenate) is one of the most frequently used commands in Linux. It is used to list the contents of a file on the standard output (sdout). To run this command, type <b>cat </b> followed by the file’s name and its
+              extension. For instance: <b>cat file.txt </b>.
+            </p>
+            <p>
+              Here are other ways to use the <b>cat </b> command:
+            </p>
+            <ul>
+              <li>
+                <b>cat > filename </b>
+                ("creates a new file")
+              </li>
+              <li>
+                <b>cat filename1 filename2>filename3 </b>
+                ("joins two files (1 and 2) and stores the output of them in a new file (3)")
+              </li>
+              <li>
+                <b>cat filename | tr a-z A-Z >output.txt </b>
+                ("to convert a file to upper or lower case use.")
+              </li>
+            </ul>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>5. cp command</b></span>
+            <p>
+              Use the <b>cp </b>command to copy files from the current directory to a different directory. For instance, the command <b>cp scenery.jpg /home/username/Pictures </b>would create a copy of <b>scenery.jpg </b>(from your current directory)
+              into the <b>Pictures </b>directory.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>6. mv command</b></span>
+            <p>
+              The primary use of the <b>mv </b>command is to move files, although it can also be used to rename files.
+            </p>
+            <p>
+              The arguments in mv are similar to the cp command. You need to type <b>mv </b>, the file’s name, and the destination’s directory. For example: <b>mv file.txt /home/username/Documents. </b>
+            </p>
+            <p>
+              To rename files, the Linux command is <b>mv oldname.ext newname.ext </b>
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>7. mkdir command</b></span>
+            <p>
+              Use <b>mkdir </b>command to make a new directory — if you type <b>mkdir Music </b>it will create a directory called <b>Music </b>.
+            </p>
+            <p>
+              There are extra <b>mkdir </b>commands as well:
+            </p>
+            <ul>
+              <li>
+                To generate a new directory inside another directory, use this Linux basic command <b>mkdir Music/Newfile </b>
+              </li>
+              <li>
+                use the <b>p </b>(parents) option to create a directory in between two existing directories. For example, <b>mkdir -p Music/2020/Newfile </b>will create the new “2020” file.
+              </li>
+            </ul>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>8. rmdir command</b></span>
+            <p>
+              If you need to delete a directory, use the rmdir command. However, <b>rmdir </b>only allows you to delete empty directories.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>9. rm command</b></span>
+            <p>
+              The <b>rm </b>command is used to delete directories and the contents within them. If you only want to delete the directory — as an alternative to rmdir — use <b>rm -r </b>
+            </p>
+            <p>
+              <b>Note: </b>Be very careful with this command and double-check which directory you are in. This will delete everything and there is no undo.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>10. touch command</b></span>
+            <p>
+              The <b>touch </b>command allows you to create a blank new file through the Linux command line. As an example, enter <b>touch /home/username/Documents/Web.html </b>to create an HTML file entitled <b>Web </b>under the <b>Documents
+              </b>directory.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>11. locate command</b></span>
+            <p>
+              You can use this command to <b>locate </b>a file, just like the search command in Windows. What’s more, using the <b>-i </b>argument along with this command will make it case-insensitive, so you can search for a file even if you don’t
+              remember its exact name.
+            </p>
+            <p>
+              To search for a file that contains two or more words, use an asterisk <b>(*) </b>. For example, <b>locate -i school*note </b>command will search for any file that contains the word “school” and “note”, whether it is uppercase or
+              lowercase.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>12. find command</b></span>
+            <p>
+              Similar to the <b>locate </b>command, using <b>find </b>also searches for files and directories. The difference is, you use the <b>find </b>command to locate files within a given directory.
+            </p>
+            <p>
+              As an example, <b>find /home/ -name notes.txt </b>command will search for a file called <b>notes.txt </b>within the home directory and its subdirectories.
+            </p>
+            <p>
+              Other variations when using the <b>find </b>are:
+            </p>
+            <ul>
+              <li>
+                To find files in the current directory use, <b>find . -name notes.txt </b>
+              </li>
+              <li>
+                To look for directories use, <b>/ -type d -name notes. txt </b>
+              </li>
+            </ul>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>13. grep command</b></span>
+            <p>
+              Another basic Linux command that is undoubtedly helpful for everyday use is <b>grep </b>. It lets you search through all the text in a given file.
+            </p>
+            <p>
+              To illustrate, <b>grep blue notepad.txt </b>will search for the word blue in the notepad file. Lines that contain the searched word will be displayed fully.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>14. sudo command</b></span>
+            <p>
+              Short for <b>“SuperUser Do” </b>, this command enables you to perform tasks that require administrative or root permissions. However, it is not advisable to use this command for daily use because it might be easy for an error to occur if you did something wrong.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>15. df command</b></span>
+            <p>
+              Use <b>df </b>command to get a report on the system’s disk space usage, shown in percentage and KBs. If you want to see the report in megabytes, type <b>df -m. </b>
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>16. du command</b></span>
+            <p>
+              If you want to check how much space a file or a directory takes, the <b>du </b>(Disk Usage) command is the answer. However, the disk usage summary will show disk block numbers instead of the usual size format. If you want to see it in bytes, kilobytes, and megabytes, add the <b>-h </b>argument to the command line.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>17. head command</b></span>
+            <p>
+              The <b>head </b>command is used to view the first lines of any text file. By default, it will show the first ten lines, but you can change this number to your liking. For example, if you only want to show the first five lines, type <b>head -n 5 filename.ext. </b>
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>18. tail command</b></span>
+            <p>
+              This one has a similar function to the head command, but instead of showing the first lines, the <b>tail </b>command will display the last ten lines of a text file. For example, <b>tail -n filename.ext. </b>
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>19. diff command</b></span>
+            <p>
+              Short for difference, the <b>diff </b>command compares the contents of two files line by line. After analyzing the files, it will output the lines that do not match. Programmers often use this command when they need to make program alterations instead of rewriting the entire source code.
+            </p>
+            <p>
+              The simplest form of this command is <b>diff file1.ext file2.ext </b>
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>20. tar command</b></span>
+            <p>
+              The <b>tar </b>command is the most used command to archive multiple files into a <b>tarball </b>— a common Linux file format that is similar to zip format, with compression being optional.
+            </p>
+            <p>
+              This command is quite complex with a long list of functions such as adding new files into an existing archive, listing the content of an archive, extracting the content from an archive, and many more.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>21. chown command</b></span>
+            <p>
+              In Linux, all files are owned by a specific user. The <b>chown </b>command enables you to change or transfer the ownership of a file to the specified username. For instance, <b>chown linuxuser2 file.ext </b>will make <b>linuxuser2 </b>as the owner of the <b>file.ext. </b>
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>22. jobs command</b></span>
+            <p>
+              <b>jobs </b>command will display all current jobs along with their statuses. A job is basically a process that is started by the shell.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>23. kill command</b></span>
+            <p>
+              If you have an unresponsive program, you can terminate it manually by using the <b>kill </b>command. It will send a certain signal to the misbehaving app and instructs the app to terminate itself.
+            </p>
+            <p>
+              There is a total of sixty-four signals that you can use, but people usually only use two signals:
+            </p>
+            <ul>
+              <li>
+                <b>SIGTERM(15)- </b>("requests a program to stop running and gives it some time to save all of its progress. If you don’t specify the signal when entering the kill command, this signal will be used.")
+              </li>
+              <li>
+                <b>SIGKILL(9)- </b>("forces programs to stop immediately. Unsaved progress will be lost.")
+              </li>
+            </ul>
+            <p>
+              Besides knowing the signals, you also need to know the process identification number (PID) of the program you want to <b>kill </b>. If you don’t know the PID, simply run the command <b>ps ux. </b>
+            </p>
+            <p>
+              After knowing what signal you want to use and the PID of the program, enter the following syntax:
+            </p>
+            <p>
+              <b>kill [signal option] PID </b>
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>24. ping command</b></span>
+            <p>
+              Use the <b>ping </b>command to check your connectivity status to a server. For example, by simply entering <b>ping google.com </b>, the command will check whether you’re able to connect to Google and also measure the response time.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>25. wget command</b></span>
+            <p>
+              The Linux command line is super useful — you can even download files from the internet with the help of the <b>wget </b>command. To do so, simply type <b>wget </b>followed by the download link.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>26. uname command</b></span>
+            <p>
+              The <b>uname </b>command, short for Unix Name, will print detailed information about your Linux system like the machine name, operating system, kernel, and so on.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>27. top command</b></span>
+            <p>
+              As a terminal equivalent to Task Manager in Windows, the <b>top </b>command will display a list of running processes and how much CPU each process uses. It’s very useful to monitor system resource usage, especially knowing which process needs to be terminated because it consumes too many resources.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>28. history command</b></span>
+            <p>
+              When you’ve been using Linux for a certain period of time, you’ll quickly notice that you can run hundreds of commands every day. As such, running <b>history </b>command is particularly useful if you want to review the commands you’ve entered before.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>29. man command</b></span>
+            <p>
+              Confused about the function of certain Linux commands? Don’t worry, you can easily learn how to use them right from Linux’s shell by using the <b>man </b>command. For instance, entering <b>man tail </b>will show the manual instruction of the tail command.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>30. echo command</b></span>
+            <p>
+              This command is used to move some data into a file. For example, if you want to add the text, “Hello, my name is John” into a file called name.txt, you would type <b>echo Hello, my name is John >> name.txt </b>
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>31. zip, unzip command</b></span>
+            <p>
+              Use the <b>zip </b>command to compress your files into a zip archive, and use the <b>unzip </b>command to extract the zipped files from a zip archive.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>32. hostname command</b></span>
+            <p>
+              If you want to know the name of your host/network simply type <b>hostname </b>. Adding a -I to the end will display the IP address of your network.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>33. useradd, userdel command</b></span>
+            <p>
+              Since Linux is a multi-user system, this means more than one person can interact with the same system at the same time. <b>useradd </b>is used to create a new user, while <b>passwd </b>is adding a password to that user’s account. To add a new person named John type, <b>useradd John </b>and then to add his password type, <b>passwd 123456789. </b>
+            </p>
+            <p>
+              To remove a user is very similar to adding a new user. To delete the users account type, <b>userdel UserName </b>
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+        <br />
+        <div>
+          <div><span class="text-sizing"><b>Bonus Tips and Tricks</b></span>
+            <p>
+              Use the <b>clear </b>command to clean out the terminal if it is getting cluttered with too many past commands.
+            </p>
+            <p>
+              Try the <b>TAB </b>button to autofill what you are typing. For example, if you need to type Documents, begin to type a command (let’s go with <b>cd Docu </b>, then hit the TAB key) and the terminal will fill in the rest, showing you <b>cd Documents. </b>
+            </p>
+            <p>
+              <b>Ctrl+C </b>and <b>Ctrl+Z </b>are used to stop any command that is currently working. Ctrl+C will stop and terminate the command, while Ctrl+Z will simply pause the command.
+            </p>
+            <p>
+              If you accidental freeze your terminal by using <b>Ctrl+S </b>, simply undo this with the unfreeze <b>Ctrl+Q. </b>
+            </p>
+            <p>
+              <b>Ctrl+A </b>moves you to the beginning of the line while <b>Ctrl+E </b>moves you to the end.
+            </p>
+            <p>
+              You can run multiple commands in one single command by using the <b>“;” </b>to separate them. For example <b>Command1; Command2; Command3 </b>. Or use <b>&& </b>if you only want the next command to run when the first one is successful.
+            </p>
+            <p class="link-refer-size">
+              Try here :-
+            </p>
+            <a class="btn btn-primary" href="https://13.235.70.253:9090/cockpit/@localhost/docker/console.html#/c24fa71f8342">Terminal</a>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
